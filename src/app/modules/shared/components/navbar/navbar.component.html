@@ -1,16 +1,21 @@
-<div>
+<div class="navbar" >
   
-  <div>
-    <div>
+  <div class="left" >
+    <div class="image">
       <img src="assets/logo/codoacodo.png" alt="Codo-A-Codo-Logo">
     </div>
-    <div>
+
+    <div class="conference">
       <p>Conf Bs As</p>
     </div>
+
   </div>
-  <ul>
-    <li *ngFor="let item of linksToRender" >
-      <app-hipertext [hipertextLink]="item.url" [hipertextWords]="item.text"></app-hipertext>
-    </li>
-  </ul>
+
+  <div class="linksContainer">
+    <ul class="links">
+      <li *ngFor="let item of linksToRender" >
+        <app-hipertext [hipertextLink]="item.url" [hipertextWords]="item.text"></app-hipertext>
+      </li>
+    </ul>
+  </div>
 </div>
