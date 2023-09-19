@@ -1,2 +1,13 @@
-<p>navbar works!</p>
-<app-hipertext *ngFor="let item of linksToRender" [hipertextLink]="item.url" [hipertextWords]="item.text"></app-hipertext>
+<div>
+  
+  <div>
+    <div>
+      <img src="assets/logo/codoacodo.png" alt="Codo-A-Codo-Logo">
+    </div>
+    <div>
+      <p>Conf Bs As</p>
+    </div>
+  </div>
+
+  <app-hipertext *ngFor="let item of linksToRender" [hipertextLink]="item.url" [hipertextWords]="item.text"></app-hipertext>
+</div>
