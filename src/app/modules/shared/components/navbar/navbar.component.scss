@@ -1,0 +1,47 @@
+.navbar {
+  margin: 0px 0px 0px 0px;
+  display: flex;
+  background-color: rgb(53, 58, 64);
+  height: 90px;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  margin-left: 5%;
+  
+  .image {
+
+    img {
+      height: 100px;
+      width: 150px;
+    }
+  }
+
+  .conference {
+    display: flex;
+
+    p {
+      color: white;
+      align-self: center;
+      font-size: 24px;
+    }
+  }
+}
+
+.linksContainer {
+  align-self: center;
+  justify-content: space-between;
+  margin-right: 5% ;
+
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  
+  
+    li {
+      margin: 10px;
+    }
+}
+}
