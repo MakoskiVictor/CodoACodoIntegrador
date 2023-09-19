@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent, SharedModule } from './modules/shared';
+import { SharedModule } from './modules/shared';
 
 @NgModule({
   declarations: [
