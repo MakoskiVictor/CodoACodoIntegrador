@@ -1,2 +1,2 @@
 <p>navbar works!</p>
-<app-hipertext/>
+<app-hipertext *ngFor="let item of linksToRender" [hipertextLink]="item.url" [hipertextWords]="item.text"></app-hipertext>
