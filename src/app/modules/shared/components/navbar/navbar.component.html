@@ -8,6 +8,9 @@
       <p>Conf Bs As</p>
     </div>
   </div>
-
-  <app-hipertext *ngFor="let item of linksToRender" [hipertextLink]="item.url" [hipertextWords]="item.text"></app-hipertext>
+  <ul>
+    <li *ngFor="let item of linksToRender" >
+      <app-hipertext [hipertextLink]="item.url" [hipertextWords]="item.text"></app-hipertext>
+    </li>
+  </ul>
 </div>
