@@ -1,4 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
 li {
   list-style: none;
 }
@@ -6,6 +13,7 @@ li {
 a {
   text-decoration: none;
   color: grey;
+  text-align: center;
 }
 
 a:hover {
