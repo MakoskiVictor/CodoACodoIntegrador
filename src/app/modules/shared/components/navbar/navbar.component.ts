@@ -11,19 +11,23 @@ export class NavbarComponent {
 
   linksToRender = [
     {
-      text: 'Link1',
+      text: 'La conferencia',
       url: '#'
     },
     {
-      text: 'Link2',
+      text: 'Los oradores',
       url: '#'
     },
     {
-      text: 'Link3',
+      text: 'El lugar y la fecha',
       url: '#'
     },
     {
-      text: 'Link4',
+      text: 'Conviértete en orador',
+      url: '#'
+    },
+    {
+      text: 'Comprar tickets',
       url: '#'
     }
   ]
