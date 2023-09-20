@@ -10,9 +10,5 @@ export class HipertextComponent {
   @Input() hipertextLink: string = '';
   @Input() selectClass: string = 'linkersGray';
 
-  /* constructor(text: string, url: string) {
-    this.hipertextWords = text;
-    this.hipertextLink = url;
-  } */
 
 }
