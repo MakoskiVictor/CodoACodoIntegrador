@@ -1,11 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --color-blanco: rgb(244, 243, 243);
 
+  --color-verde: rgb(7, 116, 7);
+
+  --color-gris: rgb(126, 124, 124);
+}
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
 }
+
+
 
 li {
   list-style: none;
