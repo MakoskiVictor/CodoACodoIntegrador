@@ -1,5 +1,5 @@
 .btn1 {
-  height: 30px;
+  height: 35px;
   width: 150px;
   background-color: transparent;
   color: var(--color-blanco);
@@ -7,10 +7,11 @@
   border-color: var(--color-blanco);
   border-width: 1px;
   cursor: pointer;
+  margin: auto 10px auto 10px;
 }
 
 .btn2 {
-  height: 30px;
+  height: 35px;
   width: 150px;
   background-color: var(--color-verde);
   color: var(--color-blanco);
@@ -18,4 +19,5 @@
   border-color: var(--color-verde);
   border-width: 1px;
   cursor: pointer;
+  margin: auto 10px auto 10px;
 }
