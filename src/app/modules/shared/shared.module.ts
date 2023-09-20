@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ButtonComponent, ConfDetailsComponent, HipertextComponent, NavbarComponent } from './components';
+import { SpeakersComponent } from './components/speakers/speakers.component';
+import { CardComponent } from './components/card/card.component';
 
 
 
@@ -11,7 +13,9 @@ import { ButtonComponent, ConfDetailsComponent, HipertextComponent, NavbarCompon
     NavbarComponent,
     HipertextComponent,
     ConfDetailsComponent,
-    ButtonComponent
+    ButtonComponent,
+    SpeakersComponent,
+    CardComponent
   ],
   imports: [
     CommonModule
