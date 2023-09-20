@@ -1,0 +1,21 @@
+.btn1 {
+  height: 30px;
+  width: 150px;
+  background-color: transparent;
+  color: var(--color-blanco);
+  border-radius: 5px;
+  border-color: var(--color-blanco);
+  border-width: 1px;
+  cursor: pointer;
+}
+
+.btn2 {
+  height: 30px;
+  width: 150px;
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  border-radius: 5px;
+  border-color: var(--color-verde);
+  border-width: 1px;
+  cursor: pointer;
+}
