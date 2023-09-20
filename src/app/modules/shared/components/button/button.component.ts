@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
   @Input() btnClass: string = 'btn1'
+  @Input() btnText: string = 'Quiero ser orador'
 }
