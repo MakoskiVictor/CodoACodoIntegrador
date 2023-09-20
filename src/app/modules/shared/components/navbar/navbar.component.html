@@ -14,7 +14,7 @@
   <div class="linksContainer">
     <ul class="links">
       <li *ngFor="let item of linksToRender" >
-        <app-hipertext [hipertextLink]="item.url" [hipertextWords]="item.text"></app-hipertext>
+        <app-hipertext [hipertextLink]="item.url" [selectClass]="item.class" [hipertextWords]="item.text"></app-hipertext>
       </li>
     </ul>
   </div>
