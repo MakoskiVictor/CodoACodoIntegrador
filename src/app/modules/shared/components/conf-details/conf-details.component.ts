@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-conf-details',
   templateUrl: './conf-details.component.html',
-  styleUrls: ['./conf-details.component.scss']
+  styleUrls: ['./conf-details.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConfDetailsComponent {
   btnInputs = [
