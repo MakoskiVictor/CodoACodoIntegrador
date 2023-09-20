@@ -16,7 +16,8 @@ import { ConfDetailsComponent } from './components/conf-details/conf-details.com
     CommonModule
   ],
   exports: [
-    NavbarComponent
+    NavbarComponent,
+    ConfDetailsComponent
   ]
 })
 export class SharedModule { }
