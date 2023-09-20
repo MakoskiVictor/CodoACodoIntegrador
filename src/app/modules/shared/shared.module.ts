@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ButtonComponent, ConfDetailsComponent, HipertextComponent, NavbarComponent } from './components';
 import { SpeakersComponent } from './components/speakers/speakers.component';
 import { CardComponent } from './components/card/card.component';
+import { PillsComponent } from './components/pills/pills.component';
 
 
 
@@ -15,7 +16,8 @@ import { CardComponent } from './components/card/card.component';
     ConfDetailsComponent,
     ButtonComponent,
     SpeakersComponent,
-    CardComponent
+    CardComponent,
+    PillsComponent
   ],
   imports: [
     CommonModule
