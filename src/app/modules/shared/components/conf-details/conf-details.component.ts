@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./conf-details.component.scss']
 })
 export class ConfDetailsComponent {
-
+  btnInputs = [
+    {
+      text: 'Quiero ser orador',
+      class: 'btn1'
+    },
+    {
+      text: 'Comprar tickets',
+      class: 'btn2'
+    }
+  ]
 }
