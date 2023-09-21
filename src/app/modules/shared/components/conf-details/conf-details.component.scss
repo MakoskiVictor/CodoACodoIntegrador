@@ -1,11 +1,12 @@
-.detailContainer {
+section {
 
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto 0px auto;
+  display: block;
 
   .bairesImg {
-    filter: brightness(50%);
+    filter: brightness(45%);
     width: 100vw;
   }
   
@@ -16,11 +17,20 @@
     top: 48%;
     right: 10%;
 
+    h1, p {
+      color: var(--color-blanco);
+      text-align: end;
+    }
+
+    h1 {
+      font-family: Roboto-Medium;
+      font-size: 2rem;
+      margin-bottom: 0px;
+    }
+
     p {
-      color: rgb(244, 243, 243);
       text-wrap: wrap;
       font-size: 1.2rem;
-      text-align: end;
     }
 
     .buttonContainer {
