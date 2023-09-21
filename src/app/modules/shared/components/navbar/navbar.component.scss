@@ -1,7 +1,8 @@
 .navbar {
   display: flex;
   background-color: var(--color-darkGray);
-  height: 90px;
+  padding: 0.5rem;
+  max-height: 90px;
   justify-content: space-between;
 }
 
@@ -10,11 +11,13 @@
   margin-left: 5%;
   
   .image {
-
     img {
-      height: 100px;
+      border-radius: 10px;
+      height: 90px;
       width: 150px;
+      cursor: pointer;
     }
+
   }
 
   .conference {
