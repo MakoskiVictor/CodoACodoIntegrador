@@ -1,0 +1,28 @@
+section {
+  margin: 0px auto 0px auto;
+
+  p, h2 {
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: Roboto-Light;
+    font-size: 0.9rem;
+  }
+
+}
+
+.cardContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap: 1.25rem;
+
+
+    .card {
+      padding: 20px;
+    }
+
+}
