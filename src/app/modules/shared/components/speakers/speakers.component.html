@@ -1,1 +1,10 @@
-<p>speakers works!</p>
+<section>
+  <p>Conoce a los</p>
+  <h2>Oradores</h2>
+  <div class="cardContainer" >
+    <div  *ngFor="let item of speakersInfo" >
+        <app-card class="card" [speakerName]="item.name" [speakerImage]="item.image" [speakerText]="item.text" />
+    </div>
+
+  </div>
+</section>
