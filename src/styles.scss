@@ -15,6 +15,15 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   font-family: Roboto-Regular;
+
+  overflow-y: auto;
+  scrollbar-width: none;
+  
+
+}
+
+body::-webkit-scrollbar {
+  width: 0; /* Ancho de la barra de desplazamiento */
 }
 
 @font-face {
