@@ -3,7 +3,15 @@
   <h2>Oradores</h2>
   <div class="cardContainer" >
     <div  *ngFor="let item of speakersInfo" >
-        <app-card class="card" [speakerName]="item.name" [speakerImage]="item.image" [speakerText]="item.text" />
+        <app-card class="card" 
+          [speakerName]="item.name" 
+          [speakerImage]="item.image" 
+          [speakerText]="item.text" 
+          [theme]="item.firstPill.theme" 
+          [class]="item.firstPill.class"
+          [theme2]="item.secondPill.theme"
+          [class2]="item.secondPill.class"
+           />
     </div>
 
   </div>
