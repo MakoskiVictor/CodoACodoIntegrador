@@ -1,0 +1,34 @@
+.pillYellow {
+    background-color: rgb(254, 195, 7);
+    border-radius: 5px;
+    padding: .125rem;
+    font-family: Roboto-Bold;
+    font-size: .75rem;
+  }
+
+.pillBlue {
+    background-color: rgb(23, 164, 184);
+    color: var(--color-blanco);
+    border-radius: 5px;
+    padding: .125rem;
+    font-family: Roboto-Bold;
+    font-size: .75rem;
+}
+
+.pillGray {
+  background-color: var(--color-gris);
+  color: var(--color-blanco);
+  border-radius: 5px;
+  padding: .125rem;
+  font-family: Roboto-Bold;
+  font-size: .75rem;
+}
+
+.pillRed {
+  background-color: rgb(218, 53, 69);
+  color: var(--color-blanco);
+  border-radius: 5px;
+  padding: .125rem;
+  font-family: Roboto-Bold;
+  font-size: .75rem;
+}
