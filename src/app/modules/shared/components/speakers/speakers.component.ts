@@ -14,7 +14,15 @@ export class SpeakersComponent {
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Minima possimus saepe deserunt velit quo aspernatur iure non 
       cum voluptatum itaque, architecto dolorum dicta ullam aut, 
-      eos pariatur aliquam tenetur explicabo.`
+      eos pariatur aliquam tenetur explicabo.`,
+      firstPill: {
+        theme: 'JavaScript',
+        class: 'pillYellow'
+      },
+      secondPill: {
+        theme: 'React',
+        class: 'pillBlue'
+      }
     },
     {
       image: 'assets/speakers/bill.jpg',
@@ -22,7 +30,15 @@ export class SpeakersComponent {
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Minima possimus saepe deserunt velit quo aspernatur iure non 
       cum voluptatum itaque, architecto dolorum dicta ullam aut, 
-      eos pariatur aliquam tenetur explicabo.`
+      eos pariatur aliquam tenetur explicabo.`,
+      firstPill: {
+        theme: 'JavaScript',
+        class: 'pillYellow'
+      },
+      secondPill: {
+        theme: 'React',
+        class: 'pillBlue'
+      }
     },
     {
       image: 'assets/speakers/ada.jpeg',
@@ -30,7 +46,15 @@ export class SpeakersComponent {
       text: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
       Minima possimus saepe deserunt velit quo aspernatur iure non 
       cum voluptatum itaque, architecto dolorum dicta ullam aut, 
-      eos pariatur aliquam tenetur explicabo.`
+      eos pariatur aliquam tenetur explicabo.`,
+      firstPill: {
+        theme: 'Negocios',
+        class: 'pillGray'
+      },
+      secondPill: {
+        theme: 'Startps',
+        class: 'pillRed'
+      }
     }
   ]
 }
