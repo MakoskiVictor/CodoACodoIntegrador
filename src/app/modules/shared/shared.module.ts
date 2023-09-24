@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent, CardComponent, CityDescriptionComponent, ConfDetailsComponent, HipertextComponent, NavbarComponent, PillsComponent, SpeakersComponent } from './components';
+import { ButtonComponent, CardComponent, CityDescriptionComponent, ConfDetailsComponent, FooterComponent, HipertextComponent, NavbarComponent, PillsComponent, SpeakersComponent } from './components';
 
 
 
@@ -17,7 +17,8 @@ import { ButtonComponent, CardComponent, CityDescriptionComponent, ConfDetailsCo
     SpeakersComponent,
     CardComponent,
     PillsComponent,
-    CityDescriptionComponent
+    CityDescriptionComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule
@@ -26,7 +27,8 @@ import { ButtonComponent, CardComponent, CityDescriptionComponent, ConfDetailsCo
     NavbarComponent,
     ConfDetailsComponent,
     SpeakersComponent,
-    CityDescriptionComponent
+    CityDescriptionComponent,
+    FooterComponent
   ]
 })
 export class SharedModule { }
