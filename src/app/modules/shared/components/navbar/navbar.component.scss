@@ -50,3 +50,12 @@
     }
 }
 }
+
+@media (max-width: 768px) {
+  .conference {
+    display: none;
+    p {
+      display: none;
+    }
+  }
+}
