@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ButtonComponent, CardComponent, CityDescriptionComponent, ConfDetailsComponent, FooterComponent, HipertextComponent, NavbarComponent, PillsComponent, SpeakersComponent } from './components';
-
-
-
-
-
-
+import {
+  ButtonComponent, CardComponent, CityDescriptionComponent, ConfDetailsComponent, FooterComponent,
+  FormComponent, HipertextComponent, NavbarComponent, PillsComponent, SpeakersComponent
+} from './components';
 
 @NgModule({
   declarations: [
@@ -18,7 +15,8 @@ import { ButtonComponent, CardComponent, CityDescriptionComponent, ConfDetailsCo
     CardComponent,
     PillsComponent,
     CityDescriptionComponent,
-    FooterComponent
+    FooterComponent,
+    FormComponent
   ],
   imports: [
     CommonModule
