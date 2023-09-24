@@ -26,7 +26,8 @@ import {
     ConfDetailsComponent,
     SpeakersComponent,
     CityDescriptionComponent,
-    FooterComponent
+    FooterComponent,
+    FormComponent
   ]
 })
 export class SharedModule { }
