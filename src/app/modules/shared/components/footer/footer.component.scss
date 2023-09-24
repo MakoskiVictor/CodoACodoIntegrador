@@ -1,0 +1,26 @@
+footer {
+  margin-bottom: 0px;
+  padding: .3125rem;
+  background-color: rgb(29, 76, 102);
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    li {
+      max-width: 80px;
+      align-self: center;
+      a {
+        text-decoration: none;
+        color: var(--color-blanco);
+
+        &:hover {
+          text-decoration: underline;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+  }
+}
+
