@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class CityDescriptionComponent {
 
-  title = 'Bs As -Octubre'
+  title = 'Bs As - Octubre'
   description = `Buenos Aires es la provincia y localidad más grande del estado de Argentina. 
   En los Estados Unidos, Honolulu es la más sureña de entre las principales 
   ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana
