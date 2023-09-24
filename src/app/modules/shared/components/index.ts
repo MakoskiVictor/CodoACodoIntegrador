@@ -3,6 +3,7 @@ export * from './card';
 export * from './city-description';
 export * from './conf-details';
 export * from './footer';
+export * from './form';
 export * from './hipertext/hipertext.component';
 export * from './navbar';
 export * from './pills';
