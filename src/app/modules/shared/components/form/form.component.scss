@@ -7,30 +7,61 @@ section {
     text-align: center;
   }
 
+  p {
+    margin-bottom: 5px;
+    font-size: .75rem;
+  }
+
+  h3 {
+    margin: 0px auto;
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
   form {
     .inputContainer {
-      background-color: red;
+
       display: flex;
       justify-content: space-between;
       input {
         gap: 1.25rem;
         min-width: 15.625rem;
-        background-color: aqua;
+        padding: 5px;
+        margin-bottom: 20px;
       }
     }
 
     .textareaContainer {
-      background-color: brown;
+
       display: flex;
       justify-content: center;
       align-content: center;
+      margin-bottom: 5px;
       textarea {
+        width: 100%;
         min-width: 300px;
+        resize: none;
       }
     }
 
+    .remembering {
+      text-align: left;
+      font-size: 12px;
+      margin-top: 0px;
+    }
+    
     button {
-      background-color: green;
+      background-color: rgb(150, 201, 62);
+      padding: 8px;
+      border: 0.5px solid rgb(150, 201, 62);
+      color: var(--color-blanco);
+      width: 100%;
+      min-width: 300px;
+      gap: 1.25rem;
+      margin-bottom: 20px;
     }
   }
   
