@@ -2,15 +2,18 @@ footer {
   margin-bottom: 0px;
   padding: .3125rem;
   background-color: rgb(29, 76, 102);
+  width: 100%;
 
   ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-content: center;
+    flex-wrap: wrap;
 
     li {
-      max-width: 80px;
+      min-width: 80px;
       align-self: center;
+      padding: 10px;
       a {
         text-decoration: none;
         color: var(--color-blanco);
@@ -23,4 +26,5 @@ footer {
     }
   }
 }
+
 
