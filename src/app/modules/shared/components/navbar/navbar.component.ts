@@ -7,6 +7,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NavbarComponent {
+
   hipertextWords = [];
   hipertextLink = '#'
 
@@ -37,4 +38,10 @@ export class NavbarComponent {
       class: 'linkersGreen'
     }
   ]
+
+  active = false;
+
+  setActive(): void {
+    this.active = !this.active;
+  }
 }
