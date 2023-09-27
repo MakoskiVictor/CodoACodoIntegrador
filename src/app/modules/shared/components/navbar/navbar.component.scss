@@ -47,6 +47,7 @@ button {
 }
 
 .linksContainer {
+  display: flex;
   align-self: center;
   justify-content: space-between;
   margin-right: 5% ;
@@ -71,15 +72,23 @@ button {
     }
   }
   .linksContainer {
-    display: none;
+    /* display: none; */
+    height: 0vh;
     width: 100%;
     background-color: var(--color-darkGray);
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
 
+    /* ocultar eventos de mause y lo que sobresale */
+    overflow: hidden;
+    pointer-events: none;
+    transition: all .5s ease;
+
     &--active {
-      display: flex;
+      /* display: flex; */
+      height: 30vh;
+      pointer-events: auto;
     }
 
     ul {
