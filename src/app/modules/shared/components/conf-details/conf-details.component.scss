@@ -40,5 +40,36 @@ section {
     }
   }
 
+  @media screen and (max-width: 1080px) {
+    .textContainer {
+      max-width: 100%; 
+      right: 0; 
+      top: 50%; 
+      transform: translateY(-50%); 
+
+      h1 {
+        font-family: Roboto-Medium;
+        font-size: .75rem;
+        margin-bottom: 0px;
+        margin-right: 5%;
+      }
+  
+      p {
+        text-wrap: wrap;
+        font-size: .6875rem;
+        max-width: 250px;
+        margin-right: 5%;
+      }
+
+      .buttonContainer {
+        display: none;
+      }
+    }
+
+    .bairesImg {
+      width: 100%; /* Haz que la imagen ocupe el ancho completo */
+    }
+  }
+
 
 }

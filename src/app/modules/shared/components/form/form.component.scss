@@ -2,6 +2,7 @@ section {
   display: flex;
   align-content: center;
   justify-content: center;
+  width: 100%;
 
   p, h3 {
     text-align: center;
@@ -27,6 +28,7 @@ section {
       display: flex;
       justify-content: space-between;
       input {
+        min-width: 6.25rem;
         gap: 1.25rem;
         min-width: 15.625rem;
         padding: 5px;
@@ -65,4 +67,53 @@ section {
     }
   }
   
+}
+
+@media screen and (max-width: 540px) {
+
+  section {
+
+    p {
+      font-size: .625rem;
+    }
+  
+    h3 {
+      font-size: 1rem;
+    }
+  
+    form {
+  
+      .inputContainer {
+    
+        flex-wrap: wrap;
+    
+        input {
+          gap: 0rem;
+          margin: 5px auto;
+        }
+      }
+    
+      .textareaContainer {
+    
+        width: 100%;
+        margin: 5px auto;
+        textarea {
+          width: 100%;
+          min-width: 300px;
+          resize: none;
+        }
+      }
+    
+      .remembering {
+        font-size: 10px;
+      }
+    
+      button {
+        min-width: 150px;
+        gap: 0rem;
+        margin: 0 auto 20px auto;
+      }
+    }
+  }
+
 }

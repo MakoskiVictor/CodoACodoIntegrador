@@ -11,9 +11,9 @@ footer {
     flex-wrap: wrap;
 
     li {
-      min-width: 80px;
       align-self: center;
       padding: 10px;
+      margin: auto;
       a {
         text-decoration: none;
         color: var(--color-blanco);
