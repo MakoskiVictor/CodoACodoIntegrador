@@ -11,7 +11,9 @@
 
   </div>
 
-  <div class="linksContainer">
+  <button (click)="setActive()" ><img src="assets/icons/menu.svg" alt="menu-icon"></button>
+
+  <div class="linksContainer" [ngClass]=" {'linksContainer--active' : active} " >
     <ul class="links">
       <li *ngFor="let item of linksToRender" >
         <app-hipertext [hipertextLink]="item.url" [selectClass]="item.class" [hipertextWords]="item.text"></app-hipertext>
