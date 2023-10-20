@@ -4,9 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SharedModule } from './modules/shared';
-import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = []
 
 @NgModule({
   declarations: [
@@ -15,8 +12,7 @@ const routes: Routes = []
   imports: [
     BrowserModule,
     AppRoutingModule,
-    SharedModule,
-    RouterModule.forRoot(routes, { useHash: true })
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
