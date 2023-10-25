@@ -28,12 +28,21 @@ section {
       display: flex;
       justify-content: space-between;
       input {
-        min-width: 6.25rem;
+        /* min-width: 6.25rem; */
         gap: 1.25rem;
         min-width: 15.625rem;
         padding: 5px;
         margin-bottom: 20px;
       }
+    }
+
+    .mail {
+      /* min-width: 6.25rem; */
+      gap: 1.25rem;
+      min-width: 15.625rem;
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 20px;
     }
 
     .textareaContainer {
