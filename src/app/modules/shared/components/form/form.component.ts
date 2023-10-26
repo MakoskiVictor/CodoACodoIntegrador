@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -8,8 +8,8 @@ import { FormControl } from '@angular/forms';
 })
 export class FormComponent {
   
-  numberOfTickets = new FormControl(null);
-  category = new FormControl('');
+  numberOfTickets = new FormControl(null, [Validators.required,Validators.min(1) ]);
+  category = new FormControl('', [Validators.required, Validators.minLength(5)]);
   ticketPrice = 200;
   total = 0;
 
