@@ -24,13 +24,21 @@
         <div>
           <label for="">Categoría: </label>
           <select name="select" [formControl]="category" id="category">
-            <option value="">Seleccione</option>
+            <option disabled value="">Seleccione</option>
             <option value="estudiante">Estudiante</option>
             <option value="trainee">Trainee</option>
             <option value="junior">Junior</option>
           </select>
         </div>
       </div>
+
+      <div [hidden]="numberOfTickets.valid || numberOfTickets.pristine || category.valid" >
+        <span *ngIf="numberOfTickets.errors?.['required']" >La cantidad es obligatoria</span>
+        <span *ngIf="numberOfTickets.errors?.['min']" >La cantidad mínima es 1 </span>
+        <span *ngIf="category.errors?.['minLength']" >Seleccione una Categoría </span>
+        <span *ngIf="category.errors?.['required']" >Seleccione una Categoría </span>
+      </div>
+      
 
       <P class="totalPrice">Total a pagar: {{total | currency}} </P>
 
@@ -40,11 +48,8 @@
 
         <!-- <p class="remembering">Recuerda incluir un título para tu charla</p> -->
 
-      <button type="submit"  >Enviar</button>
+      <button type="submit"  >Calcular</button>
     </form>
   </div>
-
-  {{category.value}}
-  {{numberOfTickets.value}}
 
 </section>
