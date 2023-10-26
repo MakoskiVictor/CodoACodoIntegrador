@@ -1,36 +1,50 @@
 <section>
   <div>
     <div>
-      <p>CONVIÉRTETE EN UN</p>
-      <h3>ORADOR</h3>
-      <p class="subtitle">Anótate como orador para dar una <u>charla ignite</u>. ¡Cuéntanos de qué quieres hablar!</p>
+      <h3>VALOR DEL TICKET $200</h3>
+      <!-- <p class="subtitle">Anótate como orador para dar una <u>charla ignite</u>. ¡Cuéntanos de qué quieres hablar!</p> -->
     </div>
-    <form action="">
+    <form action="" (ngSubmit)="calculateTotalPayment()" >
       <div class="inputContainer" >
         <input type="text" placeholder="Nombre" >
         <input type="text" placeholder="Apellido" >
       </div>
-      <input class="mail" type="text" placeholder="Correo">
+
+      <div class="mail">
+        <input type="text" placeholder="Correo">
+      </div>
       
-      <div>
-        <label for="">Cantidad</label>
-        <input type="number">
-        <label for="">Categoría</label>
-        <select name="Select" id="">
-          <option value="estudiante">Estudiante</option>
-          <option value="trainee">Trainee</option>
-          <option value="junior">Junior</option>
-        </select>
+      <div class="selectors">
+
+        <div>
+          <label for="" >Cantidad: </label>
+          <input type="number" [formControl]="numberOfTickets" name="numberOfTickets" placeholder="Ingrese">
+        </div>
+
+        <div>
+          <label for="">Categoría: </label>
+          <select name="select" [formControl]="category" id="category">
+            <option value="">Seleccione</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="trainee">Trainee</option>
+            <option value="junior">Junior</option>
+          </select>
+        </div>
       </div>
 
-      <div class="textareaContainer">
+      <P class="totalPrice">Total a pagar: {{total | currency}} </P>
+
+      <!-- <div class="textareaContainer">
         <textarea name="" id="" cols="30" rows="10" placeholder="¿Sobre qué quieres hablar?" ></textarea>
-      </div>
+      </div> -->
 
-        <p class="remembering">Recuerda incluir un título para tu charla</p>
+        <!-- <p class="remembering">Recuerda incluir un título para tu charla</p> -->
 
-      <button type="submit" >Enviar</button>
+      <button type="submit"  >Enviar</button>
     </form>
   </div>
+
+  {{category.value}}
+  {{numberOfTickets.value}}
 
 </section>
