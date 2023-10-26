@@ -14,7 +14,7 @@ section {
   }
 
   h3 {
-    margin: 0px auto;
+    margin: 20px auto;
     font-size: 1.5rem;
   }
 
@@ -27,8 +27,8 @@ section {
 
       display: flex;
       justify-content: space-between;
+
       input {
-        /* min-width: 6.25rem; */
         gap: 1.25rem;
         min-width: 15.625rem;
         padding: 5px;
@@ -37,15 +37,19 @@ section {
     }
 
     .mail {
-      /* min-width: 6.25rem; */
-      gap: 1.25rem;
-      min-width: 15.625rem;
-      width: 100%;
-      padding: 5px;
-      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+
+      input {
+        gap: 1.25rem;
+        min-width: 15.625rem;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 20px;
+      }
     }
 
-    .textareaContainer {
+    /* .textareaContainer {
 
       display: flex;
       justify-content: center;
@@ -56,13 +60,41 @@ section {
         min-width: 300px;
         resize: none;
       }
+    } */
+
+    .selectors {
+      display: flex;
+      align-content: center;
+      justify-content: space-around;
+      input {
+        gap: 1.25rem;
+        min-width: 4.625rem;
+        width: 20%;
+        padding: 5px;
+        margin-bottom: 20px;
+      }
+
+      select {
+        gap: 1.25rem;
+        min-width: 6.625rem;
+        width: 20%;
+        padding: 5px;
+        margin-bottom: 20px;
+      }
     }
 
-    .remembering {
+    .totalPrice {
+      background-color: aqua;
+      padding: .8rem;
+      text-align: left;
+      font-size: .9rem;
+    }
+
+    /* .remembering {
       text-align: left;
       font-size: 12px;
       margin-top: 0px;
-    }
+    } */
     
     button {
       background-color: rgb(150, 201, 62);
@@ -73,6 +105,13 @@ section {
       min-width: 300px;
       gap: 1.25rem;
       margin-bottom: 20px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(168, 215, 85);
+        border: 0.5px solid rgb(168, 215, 85);
+        transition: .3s;
+      }
     }
   }
   
