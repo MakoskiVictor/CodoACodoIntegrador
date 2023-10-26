@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
@@ -6,15 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
+  
+  numberOfTickets = new FormControl(null);
+  category = new FormControl('');
   ticketPrice = 200;
   total = 0;
 
-  calculateTotalPayment (numberOfTickets: number, category: string) {
-    const ticketsCost = this.ticketPrice * numberOfTickets;
+  calculateTotalPayment () {
+    const ticketsCost = this.ticketPrice * this.numberOfTickets.value!;
 
-    if (category === "estudiante") this.total = ticketsCost * 0.8;
-    if (category === "trainee") this.total = ticketsCost * 0.5;
-    if (category === "junior") this.total = ticketsCost * 0.15;
+    if (this.category.value === "estudiante") this.total = ticketsCost * 0.8;
+    if (this.category.value === "trainee") this.total = ticketsCost * 0.5;
+    if (this.category.value === "junior") this.total = ticketsCost * 0.15;
   }
 
 }
