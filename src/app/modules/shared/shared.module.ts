@@ -4,6 +4,7 @@ import {
   ButtonComponent, CardComponent, CityDescriptionComponent, ConfDetailsComponent, FooterComponent,
   FormComponent, HipertextComponent, NavbarComponent, PillsComponent, SpeakersComponent
 } from './components';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import {
     FormComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     NavbarComponent,
