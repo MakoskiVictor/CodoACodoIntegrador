@@ -16,9 +16,9 @@ export class FormComponent {
   calculateTotalPayment () {
     const ticketsCost = this.ticketPrice * this.numberOfTickets.value!;
 
-    if (this.category.value === "estudiante") this.total = ticketsCost * 0.8;
+    if (this.category.value === "estudiante") this.total = ticketsCost * 0.15;
     if (this.category.value === "trainee") this.total = ticketsCost * 0.5;
-    if (this.category.value === "junior") this.total = ticketsCost * 0.15;
+    if (this.category.value === "junior") this.total = ticketsCost * 0.8;
   }
 
 }
