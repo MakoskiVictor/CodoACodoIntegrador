@@ -32,11 +32,11 @@
         </div>
       </div>
 
-      <div [hidden]="numberOfTickets.valid || numberOfTickets.pristine || category.valid" >
-        <span *ngIf="numberOfTickets.errors?.['required']" >La cantidad es obligatoria</span>
-        <span *ngIf="numberOfTickets.errors?.['min']" >La cantidad mínima es 1 </span>
-        <span *ngIf="category.errors?.['minLength']" >Seleccione una Categoría </span>
-        <span *ngIf="category.errors?.['required']" >Seleccione una Categoría </span>
+      <div class="error" [hidden]="numberOfTickets.valid || numberOfTickets.pristine || category.valid" >
+        <span *ngIf="numberOfTickets.errors?.['required']" >*La cantidad es obligatoria </span>
+        <span *ngIf="numberOfTickets.errors?.['min']" >*La cantidad mínima es 1 </span>
+        <span *ngIf="category.errors?.['minLength']" >*Seleccione una Categoría </span>
+        <span *ngIf="category.errors?.['required']" >*Seleccione una Categoría </span>
       </div>
       
 
