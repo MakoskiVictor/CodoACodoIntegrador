@@ -23,7 +23,8 @@ export class FormComponent {
 
   eraseData () {
     this.total = 0;
-    this.numberOfTickets.setValue(null)
+    this.numberOfTickets.setValue(null);
+    this.category.setValue('');
   }
 
 }
