@@ -90,11 +90,12 @@ section {
       font-size: .9rem;
     }
 
-    /* .remembering {
-      text-align: left;
+    .error {
+      color: red;
       font-size: 12px;
-      margin-top: 0px;
-    } */
+      display: flex;
+      flex-direction: column;
+    }
     
     button, .erase-btn {
       background-color: rgb(150, 201, 62);
