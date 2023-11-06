@@ -34,7 +34,7 @@ export class NavbarComponent {
     },
     {
       text: 'Comprar tickets',
-      url: '#',
+      url: '#formSection',
       class: 'linkersGreen'
     }
   ]
