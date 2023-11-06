@@ -96,7 +96,7 @@ section {
       margin-top: 0px;
     } */
     
-    button {
+    button, .erase-btn {
       background-color: rgb(150, 201, 62);
       padding: 8px;
       border: 0.5px solid rgb(150, 201, 62);
@@ -110,6 +110,17 @@ section {
       &:hover {
         background-color: rgb(168, 215, 85);
         border: 0.5px solid rgb(168, 215, 85);
+        transition: .3s;
+      }
+    }
+
+    .erase-btn {
+      background-color: rgb(174, 69, 48);
+      border: 0.5px solid rgb(174, 69, 48);
+
+      &:hover {
+        background-color: rgb(210, 88, 64);
+        border: 0.5px solid rgb(210, 88, 64);
         transition: .3s;
       }
     }
