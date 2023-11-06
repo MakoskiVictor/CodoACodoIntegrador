@@ -21,4 +21,9 @@ export class FormComponent {
     if (this.category.value === "junior") this.total = ticketsCost * 0.8;
   }
 
+  eraseData () {
+    this.total = 0;
+    this.numberOfTickets.setValue(null)
+  }
+
 }
