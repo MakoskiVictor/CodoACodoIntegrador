@@ -9,13 +9,17 @@
   --color-darkGray: rgb(53, 58, 64);
 
   input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+  input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
-input[type="number"] {
+  input[type="number"] {
     -moz-appearance: textfield; /* Firefox */
 }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,8 +32,6 @@ body {
 
   overflow-y: auto;
   scrollbar-width: none;
-  
-
 }
 
 body::-webkit-scrollbar {
